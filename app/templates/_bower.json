@@ -1,0 +1,14 @@
+{
+    "name": "package",
+    "version": "1.0.0",
+    "dependencies": {
+        "pure" : "latest",
+        "angular" : "latest",
+        "angular-animate" : "latest",
+        "angular-loading-bar": "latest",
+        "angular-local-storage": "latest",
+        "angular-moment": "latest",
+        "font-awesome" : "latest"
+    }
+}
+

@@ -1,0 +1,8 @@
+Descrição:
+    Cria um novo controller
+
+Exemplo:
+    yo projeto:controller modulo controllerName
+
+    Isso irá criar:
+        asset/javascript/application/{modulo}/{controllerName}.js

@@ -1,0 +1,14 @@
+Descrição:
+    Cria um novo módulo no
+
+Exemplo:
+    yo projeto:module moduloPai moduleName
+
+    Isso irá criar:
+        application/asset/{moduleName}/
+        application/asset/{moduleName}/controller/
+        application/asset/{moduleName}/directive/
+        application/asset/{moduleName}/filter/
+        application/asset/{moduleName}/service/
+        application/asset/{moduleName}/view/
+        application/asset/{moduleName}/application.js

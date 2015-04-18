@@ -1,0 +1,8 @@
+Descrição:
+    Cria um novo service
+
+Exemplo:
+    yo projeto:service modulo serviceName
+
+    Isso irá criar:
+        asset/javascript/application/{modulo}/{serviceName}.js
