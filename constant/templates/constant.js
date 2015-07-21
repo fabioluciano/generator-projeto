@@ -1,4 +1,4 @@
-(function(application) {
+;(function(application) {
 
     'use strict';
 
