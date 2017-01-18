@@ -1,9 +1,9 @@
-;(function(application) {
+;(function() {
+  'use strict';
 
-    'use strict';
-
-    application.module('<%= module %>').provider('<%= name %>Provider', function () {
-
+  angular
+    .module('application.<%= module %>.providers.provider')
+      .provider('<%= name %>Provider', function () {
         var saldacao = 'Olá';
 
         function Saldador() {
@@ -19,6 +19,5 @@
         this.$get = function () {
             return new Saldador();
         };
-    });
-
-}(application));
+      });
+}());

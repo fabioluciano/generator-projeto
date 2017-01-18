@@ -1,12 +1,13 @@
-(function(application) {
-
+(function() {
     'use strict';
 
-    application.module('<%= module %>').directive('<%= name %>', [], function () {
-        return {
-            template: '<div></div>',
-            restrict: '<%= type %>'
-        };
-    });
+    angular
+    .module('application.<%= module %>.directive')
+        .directive('<%= name %>', [], function () {
+          return {
+              template: '<div></div>',
+              restrict: '<%= type %>'
+          };
+        });
 
-}(application));
+}());

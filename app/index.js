@@ -3,7 +3,8 @@
 
     var yeoman    = require('yeoman-generator'),
         chalk     = require('chalk'),
-        directory = require ('./directory.js');
+        applicationStruture = require ('./application-structure.js'),
+        moduleStructure = require ('./angular-structure.js');
 
     module.exports = yeoman.generators.Base.extend({
         initializing: function () {
@@ -14,28 +15,21 @@
             directory : function() {
                 var that = this;
 
-                // Criação dos diretórios básicos
-                Object.keys(directory.source).forEach(function(key) {
-                    if(that.mkdir(directory.source[key])) {
-                        console.log('Criando diretório: ' + chalk.yellow(directory.source[key]));
+                Object.keys(applicationStruture).forEach(function(key) {
+                    if(that.mkdir(applicationStruture[key])) {
+                        console.log('Criando diretório: ' + chalk.yellow(applicationStruture[key]));
                     }
                 });
-
-                if(that.mkdir(directory.angular.root)) {
-                    console.log('Criando diretório: ' + chalk.yellow(directory.angular.root));
-                }
             },
             application: function () {
                 this.copy('_package.json', 'package.json');
                 this.copy('_bower.json', 'bower.json');
-                this.copy('_bowerrc', '.bowerrc');
-                this.copy('_Gruntfile.js', 'Gruntfile.js');
-                this.copy('angular/modules.json', directory.angular.root +  'modules.json');
-            },
-
-            projectfiles: function () {
-                this.copy('editorconfig', '.editorconfig');
-                this.copy('jshintrc', '.jshintrc');
+                this.copy('_gitignore', '.gitignore');
+                this.copy('_gulpfile.js', 'gulpfile.js');
+                this.copy('_jshintrc', '.jshintrc');
+                this.copy('_npmrc', '.npmrc');
+                this.copy('_package.json', 'package.json');
+                this.copy('_pug-lintrc', '.pug-lintrc');
             }
         },
         install: function () {

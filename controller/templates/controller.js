@@ -1,9 +1,11 @@
-;(function(application) {
+;(function() {
+  'use strict';
 
-    'use strict';
+  angular
+    .module('application.<%= module %>.controller')
+      .controller('<%= name %>Controller', <%= name %>Controller);
 
-    application.module('<%= module %>').controller('<%= name %>Controller', function ($scope) {
+    function <%= name %>Controller() {
 
-    });
-}(application));
-
+    }
+}());

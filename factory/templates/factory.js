@@ -1,15 +1,15 @@
-;(function(application) {
+;(function() {
+  'use strict';
 
-    'use strict';
+  angular
+    .module('application.<%= module %>.providers.factory')
+      .factory('<%= name %>Factory', function () {
+          var variavelPrivada = 'valor';
 
-    application.module('<%= module %>').factory('<%= name %>Factory', function () {
-        var variavelPrivada = 'valor';
-
-        return {
-            getValorPrivado: function () {
-                return variavelPrivada;
-            }
-        };
-    });
-
-}(application));
+          return {
+              getValorPrivado: function () {
+                  return variavelPrivada;
+              }
+          };
+      });
+}());

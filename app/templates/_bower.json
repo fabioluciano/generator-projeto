@@ -1,14 +1,8 @@
 {
-    "name": "package",
-    "version": "1.0.0",
-    "dependencies": {
-        "pure" : "latest",
-        "angular" : "latest",
-        "angular-animate" : "latest",
-        "angular-loading-bar": "latest",
-        "angular-local-storage": "latest",
-        "angular-moment": "latest",
-        "font-awesome" : "latest"
-    }
+  "name": "apresentacao",
+  "dependencies": {
+    "ngc-formbuilder": "https://gitlab.apoio.fsw.ctis.com.br/componentes-angular/ngc-formbuilder.git",
+    "ngc-listreg": "https://gitlab.apoio.fsw.ctis.com.br/componentes-angular/ngc-listreg.git",
+    "ngc-buttonbar": "https://gitlab.apoio.fsw.ctis.com.br/componentes-angular/ngc-buttonbar.git"
+  }
 }
-

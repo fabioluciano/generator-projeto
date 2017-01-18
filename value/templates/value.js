@@ -1,7 +1,8 @@
-;(function(application) {
+;(function() {
+  'use strict';
 
-    'use strict';
+  angular
+    .module('application.<%= module %>.providers.value')
+      .value('<%= name %>', '<%= value %>');
 
-    application.module('<%= module %>').value('<%= name %>', '<%= value %>');
-
-}(application));
+}());

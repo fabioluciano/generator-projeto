@@ -1,9 +1,12 @@
-(function(application) {
+(function() {
+  'use strict';
 
-    'use strict';
+  angular
+    .module('application.<%= module %>.providers.service')
+      .service('<%= name %>Service', <%= name %>Service);
 
-    application.module('<%= module %>').service('<%= name %>Service', function () {
+  function <%= name %>Service() {
 
-    });
+  }
 
-}(application));
+}());

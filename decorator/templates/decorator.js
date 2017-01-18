@@ -1,13 +1,12 @@
-;(function(application) {
-
+;(function() {
     'use strict';
 
-    application.module('<%= module %>').config(function ($provide) {
+  angular
+    .module('application.<%= module %>.providers.decorator')
+      .config(function ($provide) {
         $provide.decorator('<%= name %>Decorator', function ($delegate) {
-            return $delegate;
+          return $delegate;
         });
-    });
+      });
 
-
-}(application));
-
+}());

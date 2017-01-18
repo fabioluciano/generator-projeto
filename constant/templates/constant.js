@@ -1,7 +1,8 @@
-;(function(application) {
+;(function() {
+  'use strict';
 
-    'use strict';
+  angular
+    .module('application.<%= module %>.providers.constant')
+      .constant('<%= name %>', '<%= value %>');
 
-    application.module('<%= module %>').constant('<%= name %>', '<%= value %>');
-
-}(application));
+}());
